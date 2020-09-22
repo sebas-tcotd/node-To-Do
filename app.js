@@ -1,9 +1,6 @@
 const argv = require('./config/yargs').argv;
 const porHacer = require('./por-hacer/por-hacer');
 
-
-//Crear, listar, actualizar
-//console.log(argv);
 let comando = argv._[0];
 
 switch (comando) {
@@ -25,5 +22,4 @@ switch (comando) {
         break;
     default:
         console.log('Comando no reconocido');
-
 }
